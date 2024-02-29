@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card table {
+    width: 100%; /* Menjadikan tabel penuh lebar */
+    border-collapse: collapse; /* Menggabungkan sel-sel tabel */
+}
+
+.card td {
+    padding: 10px; /* Memberi ruang di sekitar isi sel */
+    border-bottom: 1px solid #ddd; /* Memberi garis bawah pada setiap sel */
+}
+
+.card tr:last-child td {
+    border-bottom: none; /* Menghapus garis bawah pada baris terakhir */
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-width: 100%; /* Mengatur lebar kartu sesuai lebar layar */
+    }
+
+    .card table {
+        width: 100%; /* Menjadikan tabel penuh lebar */
+    }
+
+    .card td {
+        padding: 5px; /* Mengurangi ruang di sekitar isi sel */
+    }
+}
